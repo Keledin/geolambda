@@ -1,0 +1,9 @@
+FROM lambci/lambda:python2.7
+
+USER root
+
+RUN \
+    yum install -y python-pip;
+
+RUN \
+    pip-2.6 install argparse pytest;

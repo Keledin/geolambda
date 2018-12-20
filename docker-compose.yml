@@ -17,6 +17,20 @@ services:
     links:
       - base
 
+  test-python27:
+    build:
+      context: .
+      dockerfile: Dockerfile.test-python27
+    image: developmentseed/geolambda:test-python27
+    entrypoint: /bin/bash
+
+  test-python36:
+    build:
+      context: .
+      dockerfile: Dockerfile.test-python36
+    image: developmentseed/geolambda:test-python26
+    entrypoint: /bin/bash
+
 #  runner:
 #    build:
 #      context: .

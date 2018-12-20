@@ -1,0 +1,7 @@
+FROM lambci/lambda:python3.6
+
+USER root
+
+RUN \
+    easy_install pip; \
+    pip install pytest;
